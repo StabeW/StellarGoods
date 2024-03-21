@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StellarGoodsWebApi", "StellarGoodsWebApi\StellarGoodsWebApi.csproj", "{4AB7BC33-9530-4E08-AB2A-5AD7C3A36D72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StellarGoodsData", "StellarGoodsData\StellarGoodsData.csproj", "{E3820302-4BA5-42B5-8DCE-4FE0C4A48CEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StellarGoodsDTOs", "StellarGoodsDTOs\StellarGoodsDTOs.csproj", "{FE035B45-C576-4B24-A0A9-2342BFD3C441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StellarGoodsCommon", "StellarGoodsCommon\StellarGoodsCommon.csproj", "{52DB8A5A-1459-47AA-906A-1F42D397D2AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StellarGoodsMapping", "StellarGoodsMapping\StellarGoodsMapping.csproj", "{53EA6437-3D61-4420-B152-E54999143851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StellarGoodsServices", "StellarGoodsServices\StellarGoodsServices.csproj", "{AE2BEAF1-EB3F-4D33-A00B-641E6DEA6CFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AB7BC33-9530-4E08-AB2A-5AD7C3A36D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB7BC33-9530-4E08-AB2A-5AD7C3A36D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB7BC33-9530-4E08-AB2A-5AD7C3A36D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB7BC33-9530-4E08-AB2A-5AD7C3A36D72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3820302-4BA5-42B5-8DCE-4FE0C4A48CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3820302-4BA5-42B5-8DCE-4FE0C4A48CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3820302-4BA5-42B5-8DCE-4FE0C4A48CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3820302-4BA5-42B5-8DCE-4FE0C4A48CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE035B45-C576-4B24-A0A9-2342BFD3C441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE035B45-C576-4B24-A0A9-2342BFD3C441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE035B45-C576-4B24-A0A9-2342BFD3C441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE035B45-C576-4B24-A0A9-2342BFD3C441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52DB8A5A-1459-47AA-906A-1F42D397D2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DB8A5A-1459-47AA-906A-1F42D397D2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DB8A5A-1459-47AA-906A-1F42D397D2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DB8A5A-1459-47AA-906A-1F42D397D2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53EA6437-3D61-4420-B152-E54999143851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EA6437-3D61-4420-B152-E54999143851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EA6437-3D61-4420-B152-E54999143851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EA6437-3D61-4420-B152-E54999143851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE2BEAF1-EB3F-4D33-A00B-641E6DEA6CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2BEAF1-EB3F-4D33-A00B-641E6DEA6CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2BEAF1-EB3F-4D33-A00B-641E6DEA6CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2BEAF1-EB3F-4D33-A00B-641E6DEA6CFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1757AC49-74D4-4BFC-B785-4C2EF71AD331}
+	EndGlobalSection
+EndGlobal
