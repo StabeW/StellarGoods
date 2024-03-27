@@ -6,12 +6,14 @@ namespace StellarGoodsData.Models
     {
         public int Id { get; set; }
 
-        public User User { get; set; }
+        public int UserId { get; set; }
+        public required User User { get; set; }
 
-        public Product Product { get; set; }
+        public int ProductId { get; set; }
+        public required Product Product { get; set; }
 
         [Range(0, 5)]
         public double Rate { get; set; }
-
     }
 }
+
