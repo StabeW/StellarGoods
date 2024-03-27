@@ -6,10 +6,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace StellarGoodsData.Models
 {
 
-    public class Order : IAuditInfo, IDeletableEntity
+    public class Order : BaseModel<Order>, IDeletableEntity
     {
-        public int Id { get; set; }
-
         public int UserId { get; set; }
         public required User User { get; set; }
 
@@ -27,12 +25,8 @@ namespace StellarGoodsData.Models
         public int OrderItemId { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
-        public DateTime CreatedOn { get; set; } = DateTime.Now;
-
-        public DateTime? ModifiedOn { get; set; } = DateTime.Now;
-
         public bool IsDeleted { get; set; }
 
-        public DateTime? DeletedOn { get; set; } = DateTime.Now;
+        public DateTime? DeletedOn { get; set; }
     }
 }

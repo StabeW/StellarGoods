@@ -3,10 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StellarGoodsData.Models
 {
-    public class Product : IAuditInfo, IDeletableEntity
+    public class Product : BaseModel<Product>, IDeletableEntity
     {
-        public int Id { get; set; }
-
         public required string Name { get; set; }
 
         public required string Description { get; set; }
@@ -17,9 +15,6 @@ namespace StellarGoodsData.Models
         public int Quantity { get; set; }
 
         public bool Available { get; set; }
-
-        [Column(TypeName ="varbinary")]
-        public string Image { get; set; }
   
         public int CartId { get; set; }
         public required Cart Cart { get; set; }
@@ -30,13 +25,9 @@ namespace StellarGoodsData.Models
         public int OrderItemId { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
-        public DateTime CreatedOn { get; set; } = DateTime.Now;
-
-        public DateTime? ModifiedOn { get; set; } = DateTime.Now;
-
         public bool IsDeleted { get; set; }
 
-        public DateTime? DeletedOn { get; set; } = DateTime.Now;
+        public DateTime? DeletedOn { get; set; }
     }
 }
 
