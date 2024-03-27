@@ -10,7 +10,6 @@ namespace StellarGoodsData
         public StellarGoodsContext(DbContextOptions<StellarGoodsContext> options) 
             : base(options) { }
 
-
         public DbSet<User> Users { get; set; }
 
         public DbSet<Product> Products { get; set; }
@@ -28,3 +27,5 @@ namespace StellarGoodsData
         public DbSet<ShippingMethod> ShippingMethods { get; set; }
     }
 }
+
+

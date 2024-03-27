@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics;
 
 namespace StellarGoodsData.Models
 {
@@ -7,9 +6,11 @@ namespace StellarGoodsData.Models
     {
         public int Id { get; set; }
 
-        public Order Order { get; set; }
+        public int OrderId { get; set; }
+        public required Order Order { get; set; }
 
-        public Product Product { get; set; }
+        public int ProductId { get; set; }
+        public required Product Product { get; set; }
 
         public int Quantity { get; set; }
 
@@ -17,3 +18,5 @@ namespace StellarGoodsData.Models
         public decimal Price { get; set; }
     }
 }
+
+

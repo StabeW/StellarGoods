@@ -6,13 +6,16 @@ namespace StellarGoodsData.Models
     {
         public int Id { get; set; }
 
-        public User User { get; set; }
+        public int UserId { get; set; }
+        public required User User { get; set; }
 
-        public Product Product { get; set; }
+        public int ProductId { get; set; }
+        public required ICollection<Product> Products { get; set; } = new List<Product>();
 
         public int Quantity { get; set; }
 
-        [Column(TypeName ="money")]
+        [Column(TypeName = "money")]
         public decimal TotalPrice { get; set; }
     }
 }
+

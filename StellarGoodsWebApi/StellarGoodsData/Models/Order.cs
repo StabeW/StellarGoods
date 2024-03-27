@@ -1,13 +1,17 @@
-﻿using StellarGoodsData.Enum;
+
+using StellarGoodsData.Enum;
+using StellarGoodsData.Common.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StellarGoodsData.Models
 {
-    public class Order
+
+    public class Order : IAuditInfo, IDeletableEntity
     {
         public int Id { get; set; }
 
-        public User User { get; set; }
+        public int UserId { get; set; }
+        public required User User { get; set; }
 
         public DateTime? OrderDate { get; set; }
 
@@ -16,8 +20,19 @@ namespace StellarGoodsData.Models
         [Column(TypeName = "money")]
         public decimal TotalAmount { get; set; }
 
-        public string ShippingAddress { get; set; }
+        public required Address ShippingAddress { get; set; }
 
-        public string BillingAddress { get; set; }
+        public required Address BillingAddress { get; set; }
+
+        public int OrderItemId { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+
+        public DateTime CreatedOn { get; set; } = DateTime.Now;
+
+        public DateTime? ModifiedOn { get; set; } = DateTime.Now;
+
+        public bool IsDeleted { get; set; }
+
+        public DateTime? DeletedOn { get; set; } = DateTime.Now;
     }
 }
