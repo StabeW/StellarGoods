@@ -1,4 +1,6 @@
-﻿namespace StellarGoodsData.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace StellarGoodsData.Models
 {
     public class Address
     {
@@ -13,6 +15,6 @@
         public string PostalCode { get; set; }
 
         public int UserId { get; set; }
-        public User User { get; set; }
+        public IdentityUser User { get; set; }
     }
 }

@@ -7,7 +7,6 @@ namespace StellarGoodsData.Models
 {
     public class User : IdentityUser, IAuditInfo, IDeletableEntity
     {
-
         [Column(TypeName = "nvarchar(50)")]
         public required string FirstName { get; set; }
 

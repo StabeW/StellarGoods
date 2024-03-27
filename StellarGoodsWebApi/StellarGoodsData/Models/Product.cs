@@ -1,9 +1,9 @@
-using StellarGoodsData.Common.Models;
+using AspNetCoreTemplate.Data.Common.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StellarGoodsData.Models
 {
-    public class Product : BaseModel<Product>, IDeletableEntity
+    public class Product : BaseDeletableModel<Product>
     {
         public required string Name { get; set; }
 
@@ -24,10 +24,6 @@ namespace StellarGoodsData.Models
 
         public int OrderItemId { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
-
-        public bool IsDeleted { get; set; }
-
-        public DateTime? DeletedOn { get; set; }
     }
 }
 

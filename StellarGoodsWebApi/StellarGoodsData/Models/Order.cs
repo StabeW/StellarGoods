@@ -1,15 +1,16 @@
 
 using StellarGoodsData.Enum;
-using StellarGoodsData.Common.Models;
 using System.ComponentModel.DataAnnotations.Schema;
+using AspNetCoreTemplate.Data.Common.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace StellarGoodsData.Models
 {
 
-    public class Order : BaseModel<Order>, IDeletableEntity
+    public class Order : BaseDeletableModel<Order>
     {
         public int UserId { get; set; }
-        public required User User { get; set; }
+        public required IdentityUser User { get; set; }
 
         public DateTime? OrderDate { get; set; }
 
@@ -24,9 +25,5 @@ namespace StellarGoodsData.Models
 
         public int OrderItemId { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
-
-        public bool IsDeleted { get; set; }
-
-        public DateTime? DeletedOn { get; set; }
     }
 }

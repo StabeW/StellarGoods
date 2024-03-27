@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StellarGoodsData.Models
 {
@@ -7,7 +8,7 @@ namespace StellarGoodsData.Models
         public int Id { get; set; }
 
         public int UserId { get; set; }
-        public required User User { get; set; }
+        public required IdentityUser User { get; set; }
 
         public int ProductId { get; set; }
         public required ICollection<Product> Products { get; set; } = new List<Product>();
